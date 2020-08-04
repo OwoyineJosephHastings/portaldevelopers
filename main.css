@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url(logo.png);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    
+}
+
+.menu-bar{
+    background-color: orange;
+    padding: 15px 0px;
+    
+}
+
+.menu-bar ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+
+.menu-bar ul li {
+    margin-right: 5px;
+    
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 15px;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background-color:white;
+    border-radius: 3px;
+
+}
+
+.about-us-menu{
+    display: none;
+    border: 1px solid #fff;
+    position: absolute;
+    top:40px;
+}
+.menu-bar ul li:hover .about-us-menu{
+    display: block;
+    position: absolute;
+    background-color: orange;
+    margin-top: 15px;
+    margin-left: -15px;
+    
+}
+
+.menu-bar ul li:hover .about-us-menu ul{
+    display: block;
+    margin: 10px;
+    
+}
+
+.menu-bar ul li:hover .about-us-menu ul li{
+width: 150px;
+padding: 10px;
+border-bottom: 1px dotted #fff;
+background: transparent;
+border-radius: 0;
+text-align: left; 
+    
+}
+
+
+.menu-bar ul li:hover .about-us-menu ul li:last-child{
+    border-bottom: none;
+}
+
+.about-us-menu-2{
+    display: none;
+    border: 1px solid #fff;
+}
+
+
+.hover-me:hover .about-us-menu-2{
+    position: absolute;
+    display: block;
+    top:-15px;
+    left:-90%;
+    background: orange;
+    
+}
+
+.submit a {
+    text-decoration: none;
+    
+} 
+
+.submit{
+    background-color: orange;
+    text-transform: uppercase;
+   align-self: stretch
+}
+.search{
+    text-align: center;
+    width: 350px;
+    height: 30px;
+    background-color: antiquewhite;
+    
+    
+}
+
+.p1{
+    margin-left: 120px
+    
+}
+.link1{
+    
+    color:burlywood
+}
+.link2{
+    
+    color: white;
+    
+}
+.link3{
+    background-color: purple;
+    
+}
+.link4{
+    background-color: blue;
+    color: aliceblue
+    
+}
+
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.links button:hover {
+    background-color: white;
+    color: coral;
+}
+.links button{
+    height: 35px;
+    width: 80;
+    border-radius: 10px;
+    background: transparent;
+    border-style: inset;
+    margin:20px;
+}
+
+.about-us-menu-2 ul li a,
+.about-us-menu ul li a{
+    display: block;
+    padding: 15px 10px;
+}
+
+.about-us-menu-2 ul li a:hover,
+.about-us-menu ul li a:hover{
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+}
+
+
+
+@media(max-width:550px){
+    .menu-bar ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .menu-bar ul li {
+        width:100%;
+    }
+    
+    .hover-me:hover .about-us-menu-2{
+        left:90%;
+    
+    }
+    .links {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media(max-width:400px){
+    .links {
+        grid-template-columns: 1fr 1fr;
+    }
+}

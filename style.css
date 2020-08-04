@@ -1,0 +1,29 @@
+
+body {
+
+     background-size: cover;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-top: 0px;
+      background-image: url(logo.png);
+}
+ 
+.heading { 
+
+    font-family: sans-serif;
+    background-color: darkslateblue; 
+   border-style: groove;
+    color: aliceblue
+    
+}
+
+object {
+   
+        background-color: beige;
+    border-style: groove;
+    border-width: 10px;
+    border-color: chocolate;
+    
+    }
